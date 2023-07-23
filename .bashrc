@@ -125,6 +125,5 @@ export PS1="\u@\h \[\e[32m\]\w \[\e[91m\]\$(parse_git_branch)\[\e[00m\]$ "
 # show commands history with date & time
 export HISTTIMEFORMAT="%d-%m-%y %H:%M "
 
-
 # set up autocomplete in bash into the current shell, bash-completion package should be installed first.
 source <(kubectl completion bash)
