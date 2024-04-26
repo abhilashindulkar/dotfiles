@@ -6,6 +6,7 @@ alias cd4='cd ../../../..'
 alias cd5='cd ../../../../..'
 # alias for executables
 alias tf='terraform'
+alias po='podman'
 alias k='kubectl'
 complete -o default -F __start_kubectl k
 # change specific directories
