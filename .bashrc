@@ -127,3 +127,10 @@ export HISTTIMEFORMAT="%d-%m-%y %H:%M "
 
 # set up autocomplete in bash into the current shell, bash-completion package should be installed first.
 source <(kubectl completion bash)
+
+
+# gke-auth-plugin
+sudo apt-get install google-cloud-sdk-gke-gcloud-auth-plugin
+echo "export USE_GKE_GCLOUD_AUTH_PLUGIN=True" >> ~/.bashrc
+source ~/.bashrc
+gcloud container clusters get-credentials <your cluster name> --internal-ip --project=<project ID> --zone <cluster zone>
